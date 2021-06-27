@@ -1,0 +1,202 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.logo{
+    display: flex;
+    color:black;
+    font-weight: bolder;
+    position: absolute;
+    font-size: 14px;
+    margin: 0px 20px;
+}
+.navigation{
+    position: sticky;
+    height: 50px;
+}
+.navigation ul{
+    display: flex;
+    list-style: none;
+    margin: 0px 100px;
+}
+.navigation ul a{
+    display: block;
+    text-decoration: none;
+    margin: 10px 20px;
+    font-weight: bold;
+    color: black;
+    padding: 10px 19px;
+    border-radius: 22px;
+    cursor: pointer;
+}
+.navigation::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .6;
+}
+.navigation ul a:hover{
+    background-color: white;
+    color: red;
+}
+.content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+}
+.content::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-image: url("content.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    opacity: .6;
+}
+@keyframes example {
+    from {color:rgb(48, 94, 247)}
+    to {color: rgb(216, 35, 177);;}
+  }
+.content h1{
+    font-size: 65px;
+    color: rgb(48, 94, 247);
+    transition: transform 2.5s;  
+}
+.content h1:hover{
+    transform: rotate(360deg);
+    animation-name: example;
+    animation-duration: 5s;
+}
+.content p{
+    font-size: 22px;
+    margin: 86px 65px;
+    color:black;
+    font-weight: bold;
+    padding: 20px 10px;
+    text-align: center;
+}
+#services-container{
+    position: absolute;
+    height: 900px;
+    width: 100%;
+    }
+#services-container h2{
+    text-align: center;
+    padding: 10px 10px;
+    margin: 30px 10px;
+    color:rgb(48, 94, 247);
+    font-weight: bold;
+    font-size: 30px;
+}
+#services-container::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-image: url("services.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    opacity: .6;
+
+}
+#services{
+    display: flex;
+    margin: 50px 5px;
+}
+#services .box{
+    margin: 0px auto;
+    
+}
+#services .box img{
+   height: 350px;
+   width: 300px;
+   display: block;
+   margin: auto;
+   border-radius: 20px;
+   border: 2px solid salmon;
+}
+#services .box p{
+    text-align: center;
+    font-weight: bold;
+}
+.btn{
+    display: block;
+    height: 50px;
+    width: 150px;
+    color: black;
+    background-color: tomato;
+    border: none;
+    border-radius: 20px;
+    margin: 100px auto;
+    font-weight: bold;
+}
+.btn:hover{
+    background-color: rgb(230, 62, 32);
+    color: whitesmoke;
+}
+#contact{
+    display: block;
+    position: relative;
+    top:836;
+    width: 100%;
+    height: 1024px;
+    color:rgb(48, 94, 247);
+    font-size: 30px;
+}
+#contact h3{
+   text-align: center;
+   font-size: 64px;
+   padding: 35px 10px;
+}
+#contact form{
+    display: block;
+    height: 400px;
+    width: 411px;
+    margin: 60px auto;
+}
+#contact form label,input{
+    font-weight: bold;
+    margin: 13px 31px;
+    padding: 10px 10px;
+    width: 300px;
+    border-radius: 19px;
+    color: black;
+}
+#contact::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-image: url("contact.jpg"); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    opacity: .6;
+}
+#contact form input.sub-button{
+    text-align: center;
+    background-color: salmon;
+    border: none;
+    width: 100px;
+    padding: 10px 10px;
+    margin: 30px 130px;
+}
+#contact form input.sub-button:hover{
+    background-color: rgb(238, 95, 79);
+}
